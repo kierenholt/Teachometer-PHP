@@ -1,0 +1,161 @@
+div#topbit {
+    width: 100%;
+    background-image: url(stripeBG.gif);
+    height: 135px;
+}
+div#topbit p {
+    clear: none;
+}
+
+
+div#bottombit {
+    width: 100%;
+    background-image: url(crowdBG.jpg);
+    background-repeat: none;
+    background-position: 50% 0%;
+    color: #eee;
+    min-height: 800px;
+}
+
+div#footer {
+  height:100px;
+   width: 100%;
+   color: white;
+    clear: both;
+    width: 100%;
+    background-image: url(stripeBG.gif);
+}
+
+div.contentBar {
+    clear: both;
+    margin: 30px 0;
+    position: relative;
+}
+
+div.contentBar p {
+  text-shadow: 2px 2px 5px #373748;
+  font-size: larger;
+}
+div.contentBar h2 {
+  text-shadow: 2px 2px 5px #373748;
+  font-weight: 500;
+  font-size: 2em;
+}
+
+div.left {
+    width: 45%;
+    clear: left;
+    float: left;
+}
+div.right {
+    width: 45%;
+    clear: right;
+    float: right;
+    position: relative;
+}
+
+table {
+    color: #eee;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #eee;
+    border-collapse: collapse;
+}
+
+table td {
+    color: #eee;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #eee;
+    padding: 0.5em;
+}
+
+div.widthLimit {
+    width: 84%;
+    max-width: 1200px;
+    margin: 0 7%;
+    clear: both;
+}
+div.widthLimit p {
+    clear: both;
+}
+
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #363647;
+}
+
+
+/*** TEXT ***/
+
+div#topbit a {
+  text-decoration: none;
+}
+div#footer a {
+  text-decoration: none;
+}
+
+p#menu {
+    clear: both;
+    padding: 10px 0;
+    margin: 0;
+    color:  #373748;
+}
+
+img#logo {
+    float: right;
+    height: 100px;
+}
+
+p#teachometer {
+    display: block;
+    float: right;
+    color: #373748;
+    font-size: 30px;
+    margin: 35px 10px 0 0;
+  text-shadow: 2px 2px 5px #fff;
+}
+
+span#underTeachometer {
+    display: block;
+    float: right;
+    color: #373748;
+    font-size: 10px;
+    margin: 3px 0px 0 0;
+  text-shadow: 2px 2px 5px #fff;
+}
+
+h1 {
+    color: #ff9900;
+    padding: 50px 0 0 0;
+    margin: 0;
+    text-shadow: 2px 2px 5px #373748;
+    font-weight: normal;
+    font-size: 3em;
+}
+
+/*** IMAGES ***/
+
+img.previewGif:hover {
+  opacity: 0;
+}
+
+img.animGif {
+    max-width: 600px;
+    width: 100%;
+    margin: 20px 0;
+    box-shadow: 2px -1px 5px #373748;
+}
+
+
+img.previewGif {
+    max-width: 600px;
+    width: 100%;
+    float: right;
+    clear: both;
+    margin: 20px 0;
+    z-index: 1;
+    position: absolute;
+}

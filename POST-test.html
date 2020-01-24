@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html>
+<head> 
+	<meta charset="UTF-8"> 
+
+</head>
+<body onload="doStuff()">
+
+    <script>
+        function doStuff2() {
+            var theUrl = "https://script.google.com/macros/s/AKfycby02oH4NxC6bT7GYO5QBfXADZs04igf3uzAe_6YSeMI0ptkyUdI/exec";
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.open( "POST", theUrl, true ); // false for synchronous request
+    xmlHttp.send( null );
+    return xmlHttp.responseText;
+}
+
+function doStuff() {
+    var theUrl = "https://script.google.com/macros/s/AKfycby02oH4NxC6bT7GYO5QBfXADZs04igf3uzAe_6YSeMI0ptkyUdI/exec?w=tesst";
+    fetch(theUrl, {
+    mode: 'no-cors', // no-cors, *cors, same-origin
+  method: 'POST', // or 'PUT'
+  headers: {
+    'Content-Type': 'application/json',
+  }
+})
+  .then((myJson) => {
+    console.log(myJson);
+  });
+}
+
+function doPost() {
+    var theUrl = "https://script.google.com/macros/s/AKfycby02oH4NxC6bT7GYO5QBfXADZs04igf3uzAe_6YSeMI0ptkyUdI/exec";
+    var data = { "w": "data" };
+    fetch(theUrl, {
+    mode: 'no-cors', // no-cors, *cors, same-origin
+  method: 'POST', // or 'PUT'
+  headers: {
+    'Content-Type': 'application/json',
+  },
+  body: JSON.stringify(data),
+})
+  .then((myJson) => {
+    console.log(myJson);
+  });
+}
+        </script>
+</body>
+</html>
+
