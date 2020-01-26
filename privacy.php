@@ -35,29 +35,21 @@
 
     <tr>
         <td><h3> Spreadsheets</h3>
-        <li>View and manage spreadsheet that this application has been installed in</td>
-        <td>Lesson content is stored in a Google Sheet. Teachometer needs to read that information and copy it into the lesson builder sidebar</td>
+        <li>See, edit, create and delete your spreadsheet in Google Drive.</td>
+        <td>Lesson content is stored in Google Sheets. Teachometer needs to read that information and copy it into the lesson builder sidebar. Teachometer does <b>not</b> access any of your Google sheets other than the currently opened one. Teachometer does <b>not</b> create or delete any of your Google sheets. When you upload a lesson, Teachometer does create a Google sheet <i>in its own Google drive</i> and shares it with you so you have access.</td>
     </tr>
-
-
-    <tr>
-        <td><h3> Spreadsheets</h3>
-        <li>See, edit, create, and delete your spreadsheets in Google Drive</td>
-        <td>Teachometer writes student data to a live markbook which is also viewable to you</td>
-    </tr>
-
 
     <tr>
         <td><h3>APIs</h3>
         <li>Connect to an external service</td>
-        <td>Teachometer needs to upload your lessons to the Teachometer website, so that students can view them from anywhere</td>
+        <td>When you upload a lesson, Teachometer sends that data to the Teachometer website which enables your students to view it</td>
     </tr>
 
 
     <tr>
         <td><h3> Web content</h3>
         <li>Display and run third-party web content in prompts and sidebars inside Google applications</td>
-        <td>As you add resources to the lesson builder sidebar, Teachometer needs to show that content in the sidebar</td>
+        <td>When you add resources to the lesson builder sidebar, Teachometer needs to show that content in the sidebar. This includes images which may be hosted on other websites.</td>
     </tr>
 
     </table>

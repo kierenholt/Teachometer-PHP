@@ -1,5 +1,5 @@
 <?php 
-$MARKBOOK_GET_API = "https://script.google.com/macros/s/AKfycbylQm3yW95G8C6vmZKwQ88Id_LIPzeSr6heWCEjwlEuESgD9Emy/exec";
+$MARKBOOK_GET_API = "https://script.google.com/macros/s/AKfycbyZWwwBQjojbakLUe6EYICYbSFO3rOxuLz3RFmq8g/exec";
 $PUBLIC_COURSE_PAGE = "https://teachometer.co.uk/course.php";
 
 if (!isset($_COOKIE['user'])) {
@@ -40,6 +40,7 @@ img#logo {
     float: right;
     height: 50px;
 }
+
 </style>
 </head>
 <body>
@@ -50,10 +51,10 @@ img#logo {
     <p id="teachometer">Teachometer<br>
 </div>
 </div>
-	
+
   <p><h1 id="titleH1"></h1></p>
-  <p id="visibleError" hidden>This page has been temporarily removed by your teacher</p>
 	<div id="questionsDiv"></div>
+  <p id="visibleError" hidden>This page has been temporarily removed by your teacher</p>
     
 
     <script src="include/assignment.js"></script>
@@ -75,9 +76,6 @@ function writeToSheet(scores) {
   for (var key in data) {
     queryString += key + "=" + encodeURIComponent(data[key]) + "&";
   }
-
-  console.log(queryString); //REMOVE FROM LIVE VERSION
-  
   fetch("<?php echo $MARKBOOK_GET_API ?>" + queryString, {
     mode: 'no-cors', // no-cors, *cors, same-origin
     method: 'GET', // or 'PUT'
@@ -86,7 +84,6 @@ function writeToSheet(scores) {
     }
   })
   .then((myJson) => {
-    console.log(myJson);  //REMOVE FROM LIVE VERSION
   });
 
 }
@@ -133,7 +130,6 @@ function init(markbookSettings) { //this is how it likes to be used. it doesnt l
             scores[key] = aggScores[key];
         }
         writeToSheet(scores);
-        console.log(JSON.stringify(scores)); //REMOVE FROM LIVE VERSION 
     
       };
   };

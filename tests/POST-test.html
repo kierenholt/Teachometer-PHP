@@ -20,7 +20,7 @@ function doStuff() {
     var theUrl = "https://script.google.com/macros/s/AKfycby02oH4NxC6bT7GYO5QBfXADZs04igf3uzAe_6YSeMI0ptkyUdI/exec?w=tesst";
     fetch(theUrl, {
     mode: 'no-cors', // no-cors, *cors, same-origin
-  method: 'POST', // or 'PUT'
+  method: 'GET', // or 'PUT'
   headers: {
     'Content-Type': 'application/json',
   }
@@ -37,7 +37,7 @@ function doPost() {
     mode: 'no-cors', // no-cors, *cors, same-origin
   method: 'POST', // or 'PUT'
   headers: {
-    'Content-Type': 'application/json',
+    'Content-Type': 'application/javascript',
   },
   body: JSON.stringify(data),
 })
