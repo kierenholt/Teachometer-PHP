@@ -1,5 +1,5 @@
 <?php 
-$MARKBOOK_GET_API = "https://script.google.com/macros/s/AKfycbyZWwwBQjojbakLUe6EYICYbSFO3rOxuLz3RFmq8g/exec";
+$MARKBOOK_GET_API = "https://script.google.com/macros/s/AKfycbylQm3yW95G8C6vmZKwQ88Id_LIPzeSr6heWCEjwlEuESgD9Emy/exec";
 ?>
 
 <!DOCTYPE html>

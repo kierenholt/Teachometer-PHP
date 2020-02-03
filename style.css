@@ -1,8 +1,8 @@
 div#topbit {
     width: 100%;
-    background-image: url(stripeBG.gif);
     height: 135px;
 }
+
 div#topbit p {
     clear: none;
 }
@@ -10,10 +10,7 @@ div#topbit p {
 
 div#bottombit {
     width: 100%;
-    background-image: url(crowdBG.jpg);
-    background-repeat: none;
-    background-position: 50% 0%;
-    color: #eee;
+    color: #373748;
     min-height: 800px;
 }
 
@@ -28,19 +25,11 @@ div#footer {
 
 div.contentBar {
     clear: both;
-    margin: 30px 0;
+    margin: 0px 0px;
+    padding: 50px 0px 50px 0px;
     position: relative;
 }
 
-div.contentBar p {
-  text-shadow: 2px 2px 5px #373748;
-  font-size: larger;
-}
-div.contentBar h2 {
-  text-shadow: 2px 2px 5px #373748;
-  font-weight: 500;
-  font-size: 2em;
-}
 
 div.left {
     width: 45%;
@@ -55,7 +44,6 @@ div.right {
 }
 
 table {
-    color: #eee;
     border-width: 1px;
     border-style: solid;
     border-color: #eee;
@@ -63,7 +51,7 @@ table {
 }
 
 table td {
-    color: #eee;
+    color: #373748;
     border-width: 1px;
     border-style: solid;
     border-color: #eee;
@@ -84,11 +72,11 @@ div.widthLimit p {
 body {
     font-family: sans-serif;
     margin: 0;
-    background-color: #363647;
+    background-image: url(stripeBG.gif);
 }
 
 
-/*** TEXT ***/
+/*** LINKS ***/
 
 div#topbit a {
   text-decoration: none;
@@ -97,12 +85,16 @@ div#footer a {
   text-decoration: none;
 }
 
+/*** MENU ***/
+
 p#menu {
     clear: both;
     padding: 10px 0;
     margin: 0;
     color:  #373748;
 }
+
+/*** LOGO ***/
 
 img#logo {
     float: right;
@@ -127,6 +119,8 @@ span#underTeachometer {
   text-shadow: 2px 2px 5px #fff;
 }
 
+/*** ORANGE TITLE ***/
+
 h1 {
     color: #ff9900;
     padding: 50px 0 0 0;
@@ -136,26 +130,43 @@ h1 {
     font-size: 3em;
 }
 
+/*** HEADINGS ***/
+
+
+div.contentBar p {
+  font-size: larger;
+}
+div.contentBar h2 {
+  font-weight: 500;
+  font-size: 2em;
+}
+
+img.floatLeft {
+float: left;
+clear: none;
+margin: 0 50px;
+display: block;
+}
+
+img.floatRight {
+float: right;
+clear: none;
+margin: 0 50px;
+display: block;
+}
+
+p#menu {
+  border-bottom: 1px solid #373748;
+  
+}
+
+
+
+
 /*** IMAGES ***/
 
-img.previewGif:hover {
-  opacity: 0;
-}
-
-img.animGif {
-    max-width: 600px;
-    width: 100%;
-    margin: 20px 0;
-    box-shadow: 2px -1px 5px #373748;
-}
-
-
-img.previewGif {
-    max-width: 600px;
-    width: 100%;
-    float: right;
-    clear: both;
-    margin: 20px 0;
-    z-index: 1;
-    position: absolute;
+img.svg {
+  width: 250px;
+  display: block;
+  float: left;
 }

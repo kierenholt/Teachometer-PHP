@@ -18,10 +18,11 @@
 <div id="bottombit">
 <div class="widthLimit">
 
-<h1>Report an issue</h1>
+<div class="contentBar">
+<h2>Report an issue</h2>
 <iframe height=2000px width=100% src="https://docs.google.com/forms/d/e/1FAIpQLSemeXEoquPAsL1Idj-Q-TF64EYmpq6c_29OIHk9pQKVd0p80w/viewform?usp=sf_link"></iframe>
 
-
+</div>
 </div> <!---widthlimit--->
 </div>
 

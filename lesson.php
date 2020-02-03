@@ -40,7 +40,6 @@ img#logo {
     float: right;
     height: 50px;
 }
-
 </style>
 </head>
 <body>
@@ -51,10 +50,10 @@ img#logo {
     <p id="teachometer">Teachometer<br>
 </div>
 </div>
-
+	
   <p><h1 id="titleH1"></h1></p>
-	<div id="questionsDiv"></div>
   <p id="visibleError" hidden>This page has been temporarily removed by your teacher</p>
+	<div id="questionsDiv"></div>
     
 
     <script src="include/assignment.js"></script>
@@ -76,6 +75,8 @@ function writeToSheet(scores) {
   for (var key in data) {
     queryString += key + "=" + encodeURIComponent(data[key]) + "&";
   }
+
+  
   fetch("<?php echo $MARKBOOK_GET_API ?>" + queryString, {
     mode: 'no-cors', // no-cors, *cors, same-origin
     method: 'GET', // or 'PUT'
@@ -90,6 +91,18 @@ function writeToSheet(scores) {
 
 function init(markbookSettings) { //this is how it likes to be used. it doesnt like strings for data or arrays for scores
 
+  //bad username
+  if (markbookSettings == null) {
+    //delete user cookie
+
+    var img = document.createElement('img'); 
+    img.src = "https://teachometer.co.uk/set-cookie.php"; 
+    img.style.display = "none";
+    document.body.appendChild(img); 
+
+    location.reload(true);
+  }
+
   //internal settings
   var settings = {
       "questionsDiv": document.getElementById("questionsDiv"),
@@ -101,14 +114,15 @@ function init(markbookSettings) { //this is how it likes to be used. it doesnt l
       "allowGridlines" : false,
       "user" : "<?php echo $USER ?>"
   };
-  document.getElementById("titleH1").innerHTML = markbookSettings["title"];
-  window.document.title = markbookSettings["title"];
 
-  //hide if visible is set to false
+  //FIRST THING AFTER GETTING THE DATA BACK - hide if visible is set to false
   if (markbookSettings["visible"] == false) {
     document.getElementById("visibleError").hidden = false;
     return;
   }
+
+  document.getElementById("titleH1").innerHTML = markbookSettings["title"];
+  window.document.title = markbookSettings["title"];
 
   //transfer markbookSettings to settings
   for (var key in markbookSettings) {

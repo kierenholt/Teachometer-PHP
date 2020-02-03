@@ -19,16 +19,17 @@
 
 <div class="widthLimit">
 
-<h1>Resources</h1>
+<div class="contentBar">
+    <h2>Resources</h2>
 
-<p>Here are some Google sheets containing lessons written in markdown.
-They are formatted for use with Teachometer's lesson builder.
-</p>
+    <p>Here are some Google sheets containing lessons written in markdown.
+    They are formatted for use with Teachometer's lesson builder.
+    </p>
 
-<a href="https://docs.google.com/spreadsheets/d/1k-OG7hbB4iAPvUrd6hUhwBcPQ_0BacnWeeMKY7XZwx8/edit?usp=sharing"<h2>Click to download a sample Year 8 Scheme of work</h2>
+    <a href="https://docs.google.com/spreadsheets/d/1k-OG7hbB4iAPvUrd6hUhwBcPQ_0BacnWeeMKY7XZwx8/edit?usp=sharing"<h2>Click to download a sample Year 8 Scheme of work</h2>
 
 
-
+</div>
 </div> <!---widthlimit--->
 </div>
 

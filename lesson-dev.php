@@ -3,7 +3,7 @@ $MARKBOOK_GET_API = "https://script.google.com/macros/s/AKfycbylQm3yW95G8C6vmZKw
 $PUBLIC_COURSE_PAGE = "https://teachometer.co.uk/course.php";
 
 if (!isset($_COOKIE['user'])) {
-  include('user.php');
+  include('user-dev.php');
   exit();
 }
 
@@ -93,6 +93,18 @@ function writeToSheet(scores) {
 
 function init(markbookSettings) { //this is how it likes to be used. it doesnt like strings for data or arrays for scores
 
+  //bad username
+  if (markbookSettings == null) {
+    //delete user cookie
+
+    var img = document.createElement('img'); 
+    img.src = "https://teachometer.co.uk/set-cookie.php"; 
+    img.style.display = "none";
+    document.body.appendChild(img); 
+
+    location.reload(true);
+  }
+
   //internal settings
   var settings = {
       "questionsDiv": document.getElementById("questionsDiv"),
@@ -104,14 +116,15 @@ function init(markbookSettings) { //this is how it likes to be used. it doesnt l
       "allowGridlines" : false,
       "user" : "<?php echo $USER ?>"
   };
-  document.getElementById("titleH1").innerHTML = markbookSettings["title"];
-  window.document.title = markbookSettings["title"];
 
-  //hide if visible is set to false
+  //FIRST THING AFTER GETTING THE DATA BACK - hide if visible is set to false
   if (markbookSettings["visible"] == false) {
     document.getElementById("visibleError").hidden = false;
     return;
   }
+
+  document.getElementById("titleH1").innerHTML = markbookSettings["title"];
+  window.document.title = markbookSettings["title"];
 
   //transfer markbookSettings to settings
   for (var key in markbookSettings) {

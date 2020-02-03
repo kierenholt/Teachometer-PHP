@@ -19,8 +19,9 @@
 <div class="widthLimit">
 
 
-<h1>Frequently asked questions</h1>
-
+<div class="contentBar">
+    <h2>Frequently asked questions</h2>
+</div>
 <p>
 
 </p>

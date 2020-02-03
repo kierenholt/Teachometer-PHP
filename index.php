@@ -16,44 +16,30 @@
 <?php include 'include/header.php'?>
 
 <div id="bottombit">
+
 <div class="widthLimit">
-    <h1>Create your own interactive lessons
-    </h1>
-</div>
-<div class="widthLimit">
-    <div class="contentBar">
-    <div class="left">
-        <h2> Simple </h2>
-        <p> Keep an entire year of lessons in a single document. Generate presentations, webpages and documents with one click. No more losing files in nests of folders!
-        </p>
-    </div>
-    <div class="right">
-        <img src="gifz/A preview.png" class="previewGif" />    
-        <img src="gifz/A optimised.gif" class="animGif" />    
-    </div>
-    </div>
 
     <div class="contentBar">
-    <div class="left">
-        <h2> Powerful </h2>
-        <p> Each student gets unique questions with immediate feedback. You get a live markbook which reports students responses for each question in real time. 
-        </p>
-    </div>
-    <div class="right">
-        <img src="gifz/B preview.png" class="previewGif" />    
-        <img src="gifz/B optimised.gif" class="animGif" />    
-    </div>
+        <img  class="floatRight svg" src="interactive.svg" />
+        <h2  class="floatRight"> An interactive lesson every time, at all levels </h2>
     </div>
 
+
     <div class="contentBar">
-    <div class="left">
-    <h2> Versatile </h2>
-    <p> Write your own lessons or cherry pick from hundreds of pre-written notes and questions. Choose from timers, % or raw scores and other features. 
+        <img class="floatLeft svg" src="realtime-assessment.svg" />
+            <h2 class="floatLeft"> Real time assessment </h2>
     </div>
-    <div class="right">
-        <img src="gifz/C preview.png" class="previewGif" />    
-        <img src="gifz/C optimised.gif" class="animGif" />    
+
+
+    <div class="contentBar">
+        <img class="floatRight svg" src="collaborate.svg" />
+        <h2 class="floatRight"> Teachers can create, edit and share resources</h2>
     </div>
+
+
+    <div class="contentBar">
+        <img src="unique-questions.svg" class="floatLeft svg"/>
+        <h2 class="floatLeft"> Uniquely generated questions for each student </h2>
     </div>
 </div>
 </div>
