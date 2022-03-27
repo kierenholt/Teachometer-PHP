@@ -20,26 +20,18 @@
 <div class="widthLimit">
 
     <div class="contentBar">
-        <img  class="floatRight svg" src="images/interactive.svg" />
-        <h2  class="floatRight"> An interactive lesson every time, at all levels </h2>
+        <img  class="floatRight" src="blue-circuits/blue-circuits.gif" />
+        <h2  class="floatRight"> <a href="blue-circuits/game.html">Blue circuits</a> <br> A powerful and FUN circuit simulator! Build bigger and bigger circuits! </h2>
     </div>
 
-
     <div class="contentBar">
-        <img class="floatLeft svg" src="images/realtime-assessment.svg" />
-            <h2 class="floatLeft"> Real time assessment </h2>
+        <img  class="floatRight" src="blue-ripples/blue-ripples.gif" />
+        <h2  class="floatRight"> <a href="blue-ripples/ripple.html">Blue ripples</a> <br> A complete ripple tank simulator! Observe the beauty of wave behaviour! </h2>
     </div>
 
-
     <div class="contentBar">
-        <img class="floatRight svg" src="images/collaborate.svg" />
-        <h2 class="floatRight"> Teachers can create, edit and share resources</h2>
-    </div>
-
-
-    <div class="contentBar">
-        <img src="images/unique-questions.svg" class="floatLeft svg"/>
-        <h2 class="floatLeft"> Uniquely generated questions for each student </h2>
+        <img  class="floatRight" src="foobot/assets/foobot-action.gif" />
+        <h2  class="floatRight"> <a href="foobot/builder.html">Foobot</a> <br> Use javascript to control foobot and complete the missions! Create your own challenges and send them to your students!  </h2>
     </div>
 </div>
 </div>

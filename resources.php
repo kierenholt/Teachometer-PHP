@@ -22,12 +22,19 @@
 <div class="contentBar">
     <h2>Resources</h2>
 
-    <p>Here are some Google sheets containing lessons written in markdown.
-    They are formatted for use with Teachometer's lesson builder.
+    <p>Here are some Google sheets containing lessons written in markdown which is specifically for use with Teachometer's lesson builder.
     </p>
 
-    <a href="https://docs.google.com/spreadsheets/d/1k-OG7hbB4iAPvUrd6hUhwBcPQ_0BacnWeeMKY7XZwx8/edit?usp=sharing"<h2>Click to download a sample Year 8 Scheme of work</h2>
+    <br><h3><a href="https://docs.google.com/spreadsheets/d/1k-OG7hbB4iAPvUrd6hUhwBcPQ_0BacnWeeMKY7XZwx8/edit?usp=sharing" target="_blank">Year 8 Physics Scheme of work</a></h3>
+    <br><h3><a href="https://docs.google.com/spreadsheets/d/1Mr9_fcSG4II7dviyo7A0Iu7hDzEymsibvyLsTAXH2UM/edit?usp=sharing" target="_blank">Year 9 Physics Scheme of work</a></h3>
+    <br><h3><a href="https://docs.google.com/spreadsheets/d/1tIuDprdZsX023FGWsagVeHfRVrUCF8gkG6uqDttmaj4/edit?usp=sharing" target="_blank">Year 10 Physics Scheme of work</a></h3>
+    <br><h3><a href="https://docs.google.com/spreadsheets/d/1B-YZbN0hqGIVd7PrLAqbCyS0K5ZsIbzgwRh00xqYOhQ/edit?usp=sharing" target="_blank">Year 11 Physics Scheme of work</a></h3>
+    <br><h3><a href="https://docs.google.com/spreadsheets/d/1Wb_yrz2yhm-a0HXXqWRwHkIeJCsJc6facGvz1OkaGAQ/edit?usp=sharing" target="_blank">Year 12 Physics Scheme of work</a></h3>
+    <br><h3><a href="https://docs.google.com/spreadsheets/d/1R7laRNtTwHouUQc2mAdQ82FcLCFjBGK6DPgPJJvlLKg/edit?usp=sharing" target="_blank">Year 13 Physics Scheme of work</a></h3>
 
+
+
+<br>
 
 </div>
 </div> <!---widthlimit--->
@@ -36,6 +43,7 @@
 
 
 <?php include 'include/footer.php'?>
+<?php include 'include/gopher.php'?>
 
 </body>
 </html>

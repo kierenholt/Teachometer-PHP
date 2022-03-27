@@ -20,13 +20,26 @@
 <div class="widthLimit">
 
 
-<iframe width=100% height=1000px src="https://docs.google.com/spreadsheets/d/1k-OG7hbB4iAPvUrd6hUhwBcPQ_0BacnWeeMKY7XZwx8/edit#gid=402249866"></iframe>
+<div class="contentBar">
+        <img  class="floatRight svg" src="https://upload.wikimedia.org/wikipedia/commons/d/da/Google_Drive_logo.png" />
+<h3 class="floatRight">
+    Teachometer uses Google Drive to store your schemes of work and markbooks. 
+    <br><br>
+    If you already have a Google account <a href="http://teachometer.co.uk/v2/schemeofwork.php">click here</a> to start planning and assigning lessons.
+    </h3> 
+        <br><br>
+    If you do not have a Google account then <a href="https://accounts.google.com/SignUp?hl=en">click here</a> to sign up.
+
+
+    </div>
+
 
 </div> <!---widthlimit--->
 </div>
 
 
 <?php include 'include/footer.php'?>
+<?php include 'include/gopher.php'?>
 
 </body>
 </html>

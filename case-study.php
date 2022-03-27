@@ -12,24 +12,32 @@
 </head>
 <body>
 
+
 <?php include 'include/header.php'?>
 
 <div id="bottombit">
-
 <div class="widthLimit">
 
-
 <div class="contentBar">
-    <h2>Under construction</h2>
+<h2>Case Study - Tiffin School Physics department</h2>
+
+<p> The chart below shows the % grades awarded A* to B in the past 5 years of A-level results for Tiffin School Physics department.
+<br>
+Teachometer was introduced to the new Year 12 cohort in September 2017. The cohort comprised of 76 students. Teachometer was used in all lessons as well as for fortnightly assessments.
+No members of staff joined or left the department over this period.
+<br>
+Just under two years later from the June 2019 A-level results, the <b>% grades awarded A* to B improved by 8.0%.</b> When compared to the trend this is clearly more than just a statistical fluctuation.
+<div style="text-align: center" ><img src="images/tiffin-results.png" />
 </div>
 
-
-
+</div>
 </div> <!---widthlimit--->
 </div>
 
+
 <?php include 'include/footer.php'?>
 <?php include 'include/gopher.php'?>
+
 
 </body>
 </html>

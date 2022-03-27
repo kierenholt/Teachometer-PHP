@@ -56,6 +56,7 @@ Teachometer will not be liable for any damages arising out of your use of its se
 
 
 <?php include 'include/footer.php'?>
+<?php include 'include/gopher.php'?>
 
 </body>
 </html>
